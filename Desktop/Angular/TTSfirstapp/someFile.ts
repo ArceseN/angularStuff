@@ -32,9 +32,27 @@ class Person {
     contactInfo(){
         return "You can reach" + this.FirstName + this.LastName + "at " + this.Phone;
     }
+}
 
-    Person jim = new Person;
-    class Employee extends Person {
-        HourlyWage: number; 
+var jim = new Person("Jim", "Halpert", 32, 111_111_1111, "PA", "18503","Salesperson");
+var pam = new Person("Pam", "Beasley", 30, 222_222_2222, "PA", "18503","Receptionist");
+var angela = new Person("Angela", "Martin", 34, 333_333_3333, "PA","18503","Accountant"); 
+var dwight = new Person("Dwight", "Schrute", 35, 444_444_4444, "PA", "18503", "Assistant Regional Manager"); 
+
+
+class Employee extends Person {
+    constructor(
+        FirstName: string;
+        LastName: string;
+        Age: number;
+        Phone: number;
+        State: string;
+        ZipCode: string;
+        Occupation: string;
+        hourlyWage: number;) 
+    {super(FirstName, LastName, Age, Phone, State, ZipCode, Occupation);}
+     
+    HourlyWage(){
+
     }
 }
