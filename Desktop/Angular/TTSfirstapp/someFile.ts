@@ -59,9 +59,9 @@ class Employee extends Person {
         hourlyWage: number) 
     {super(FirstName, LastName, Age, Phone, State, ZipCode, Occupation);}
     }
-    //y: number; 
+    //hoursWorked: number; 
     //WeeklyWage: number;
     //function to calculate weekly earnings
-    function WeeklyWage(hourlyWage: number, y: number): number{
-       return hourlyWage * y;}
+    function WeeklyWage(hourlyWage: number, hoursWorked= 40): number{
+       return hourlyWage * hoursWorked;}
     
